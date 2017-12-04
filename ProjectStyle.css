@@ -1,8 +1,245 @@
-<meta charset="utf-8">
-<style type="text/css">
-	.header{
-		color: white;
-		background-color: blue;
-		padding: 10px;
-	}
-</style>
+.header{
+	color: white;
+	background-color: blue;
+	padding: 10px;
+	text-align: center;
+	font-family: sans-serif, arial;
+}
+.left_lot_container{
+	position: relative;
+	width:32%;
+	float: left;
+	padding: 5px;
+	margin-left: 15px;
+	margin-right: 5px;
+	background-color: red;
+	display: grid;
+	grid-template-columns: : 1fr 1fr;
+	grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+	text-align: center;
+}
+.sign_up{
+	position: relative;
+	width: 32%;
+	float:left;
+	padding: 5px;
+	margin-right: 5px;	
+	text-align: center;
+	background-color: green;
+}
+.right_lot_container{
+	position: relative;
+	width:32%;
+	float: left;
+	padding: 5px;
+	margin-right: 5px;
+	background-color: purple;
+	display: grid;
+	grid-template-columns: : 1fr 1fr;
+	grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+	text-align: center;
+}
+/* Parking Lot 1, Column A*/
+.A1{
+	background-color: green;
+	grid-row: 1/10;
+	grid-column: 1/2;
+}
+.A2{
+	background-color: green;
+	grid-row: 2/10;
+	grid-column: 1/2;
+}
+.A3{
+	background-color: green;
+	grid-row: 3/10;
+	grid-column: 1/2;
+}
+.A4{
+	background-color: green;
+	grid-row: 4/10;
+	grid-column: 1/2;
+}
+.A5{
+	background-color: green;
+	grid-row: 5/10;
+	grid-column: 1/2;
+}
+.A6{
+	background-color: green;
+	grid-row: 6/10;
+	grid-column: 1/2;
+}
+.A7{
+	background-color: green;
+	grid-row: 7/10;
+	grid-column: 1/2;
+}
+.A8{
+	background-color: green;
+	grid-row: 8/10;
+	grid-column: 1/2;
+}
+.A9{
+	background-color: green;
+	grid-row: 9/10;
+	grid-column: 1/2;
+}
+.A10{
+	background-color: green;
+	grid-row: 10/10;
+	grid-column: 1/2;
+}
+/* Parking Lot 1, Column B*/
+.B1{
+	background-color: green;
+	grid-row: 1/10;
+	grid-column: 2/2;
+}
+.B2{
+	background-color: green;
+	grid-row: 2/10;
+	grid-column: 2/2;
+}
+.B3{
+	background-color: green;
+	grid-row: 3/10;
+	grid-column: 2/2;
+}
+.B4{
+	background-color: green;
+	grid-row: 4/10;
+	grid-column: 2/2;
+}
+.B5{
+	background-color: green;
+	grid-row: 5/10;
+	grid-column: 2/2;
+}
+.B6{
+	background-color: green;
+	grid-row: 6/10;
+	grid-column: 2/2;
+}
+.B7{
+	background-color: green;
+	grid-row: 7/10;
+	grid-column: 2/2;
+}
+.B8{
+	background-color: green;
+	grid-row: 8/10;
+	grid-column: 2/2;
+}
+.B9{
+	background-color: green;
+	grid-row: 9/10;
+	grid-column: 2/2;
+}
+.B10{
+	background-color: green;
+	grid-row: 10/10;
+	grid-column: 2/2;
+}
+/* Parking Lot 2, Column C*/
+.C1{
+	background-color: green;
+	grid-row: 1/10;
+	grid-column: 1/2;
+}
+.C2{
+	background-color: green;
+	grid-row: 2/10;
+	grid-column: 1/2;
+}
+.C3{
+	background-color: green;
+	grid-row: 3/10;
+	grid-column: 1/2;
+}
+.C4{
+	background-color: green;
+	grid-row: 4/10;
+	grid-column: 1/2;
+}
+.C5{
+	background-color: green;
+	grid-row: 5/10;
+	grid-column: 1/2;
+}
+.C6{
+	background-color: green;
+	grid-row: 6/10;
+	grid-column: 1/2;
+}
+.C7{
+	background-color: green;
+	grid-row: 7/10;
+	grid-column: 1/2;
+}
+.C8{
+	background-color: green;
+	grid-row: 8/10;
+	grid-column: 1/2;
+}
+.C9{
+	background-color: green;
+	grid-row: 9/10;
+	grid-column: 1/2;
+}
+.C10{
+	background-color: green;
+	grid-row: 10/10;
+	grid-column: 1/2;
+}
+/* Parking Lot 2, Column D*/
+.D1{
+	background-color: green;
+	grid-row: 1/10;
+	grid-column: 2/2;
+}
+.D2{
+	background-color: green;
+	grid-row: 2/10;
+	grid-column: 2/2;
+}
+.D3{
+	background-color: green;
+	grid-row: 3/10;
+	grid-column: 2/2;
+}
+.D4{
+	background-color: green;
+	grid-row: 4/10;
+	grid-column: 2/2;
+}
+.D5{
+	background-color: green;
+	grid-row: 5/10;
+	grid-column: 2/2;
+}
+.D6{
+	background-color: green;
+	grid-row: 6/10;
+	grid-column: 2/2;
+}
+.D7{
+	background-color: green;
+	grid-row: 7/10;
+	grid-column: 2/2;
+}
+.D8{
+	background-color: green;
+	grid-row: 8/10;
+	grid-column: 2/2;
+}
+.D9{
+	background-color: green;
+	grid-row: 9/10;
+	grid-column: 2/2;
+}
+.D10{
+	background-color: green;
+	grid-row: 10/10;
+	grid-column: 2/2;
+}

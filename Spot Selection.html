@@ -3,9 +3,15 @@
 <head>
 	<title>iPark</title>
 	<link rel="stylesheet" href="ProjectStyle.css">
-	<script type="text/javascript" href="On Submit.js"/>
 </head>
 <body>
+	<script type="text/javascript" >
+		function changeColor(color){
+			var myselect = document.getElementById("spotSelction"),
+			spot = myselect.options[myselect.selectedIndex].className;
+			document.spot.style.background-color = color;
+		}
+	</script>
 	<div class="header">
 		<h1>iPark.com</h1>
 		<h4>1855 Broadway New York, NY 10023</h4>
@@ -34,14 +40,14 @@
 	</div>
 	<div class="sign_up">
 		<h3>Sign up here for the parking lot</h3>
-		<form method = "post">
+		<form method = "post" onsubmit="changeColor('red')">
 			<p> <label> First Name : 
 				<input type="text" name=" First Name">
 			</label></p>
 		<p> <label> Last Name : 
 				<input type="text" name="Last Name">
 			</label></p>
-		<select id="spotSelection" onsubmit="changeColor()">
+		<select id="spotSelection">
 			<option class="A1" value="A1">A1</option>
 			<option class="A2" value="A2">A2</option>
 			<option class="A3" value="A3">A3</option>

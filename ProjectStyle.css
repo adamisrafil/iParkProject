@@ -39,54 +39,65 @@
 	grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
 	text-align: center;
 }
+
 /* Parking Lot 1, Column A*/
 .A1{
 	background-color: green;
+	border: 1px solid black;
 	grid-row: 1/10;
 	grid-column: 1/2;
 }
 .A2{
 	background-color: green;
+	border: solid 1px black;
 	grid-row: 2/10;
 	grid-column: 1/2;
 }
 .A3{
 	background-color: green;
+	border: solid 1px black;
 	grid-row: 3/10;
 	grid-column: 1/2;
 }
 .A4{
 	background-color: green;
+	border: solid 1px black;
 	grid-row: 4/10;
 	grid-column: 1/2;
 }
 .A5{
 	background-color: green;
+	border: solid 1px black;
 	grid-row: 5/10;
 	grid-column: 1/2;
 }
 .A6{
 	background-color: green;
+	border: solid 1px black;
 	grid-row: 6/10;
 	grid-column: 1/2;
 }
 .A7{
 	background-color: green;
+	border: solid 1px black;
 	grid-row: 7/10;
 	grid-column: 1/2;
 }
 .A8{
 	background-color: green;
+	border: solid 1px black;
 	grid-row: 8/10;
 	grid-column: 1/2;
 }
 .A9{
 	background-color: green;
+	border: solid 1px black;
 	grid-row: 9/10;
 	grid-column: 1/2;
 }
 .A10{
 	background-color: green;
+	border: solid 1px black;
 	grid-row: 10/10;
 	grid-column: 1/2;
 }

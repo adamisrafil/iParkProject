@@ -1,0 +1,88 @@
+body {
+    background-image: url("car-parks.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+
+}
+
+.Background{
+	width: 1000px;
+	height :800px;
+}
+
+@-webkit-keyframes blinker {
+            from {opacity: 1.0;}
+            to {opacity: 0.7;}
+        }
+
+        .blink_1{
+            text-decoration: blink;
+            -webkit-animation-name: blinker;
+            -webkit-animation-duration: 0.1s;
+            -webkit-animation-iteration-count:infinite;
+            -webkit-animation-timing-function:ease-in-out;
+            -webkit-animation-direction: alternate;
+        }
+
+        .Heading_1{
+            position: absolute;
+            top: 25px;
+            background-color: white;
+            width: 100%;
+            height: 65px;
+            font-size: 50px;
+            color: black;
+            text-align: center;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;          
+        }
+
+        .Heading_2{
+            position: absolute;
+            top: 90px;
+            background-color:black;
+            width: 100%;
+            height: 30px;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;          
+        }
+
+.blink_2{
+    text-decoration: blink;
+    -webkit-animation-name: blinker;
+        -webkit-animation-duration: 0.8s;
+        -webkit-animation-iteration-count:infinite;
+        -webkit-animation-timing-function:ease-in-out;
+        -webkit-animation-direction: alternate;
+    }
+
+.select_1{
+    font-size:40px;
+    text-align: center;
+    color:black;
+    border: 8px;
+    border-color: black;
+    border-radius: 15px 50px;
+    background:#e9fc8a;
+    padding: 10px; 
+    width: 200px;
+    height: 60px;
+    margin-top: 350px;
+    margin-left: 190px;
+
+};
+
+.line{
+    position:absolute;
+    color : #708090; 
+    width :80%;
+
+    margin-bottom: 30px; 
+}
+
+
+
+
+

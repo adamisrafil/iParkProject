@@ -30,6 +30,17 @@ $(function() {
 		console.log(idSpotSelection);
 		var spot4 = $(idSpotSelection);
 		console.log(spot4);
-		//
+		//change from empty to taken
+		if($(idSpotSelection).hasClass('taken')){
+			alert("That spot is taken");
+		}
+		else {
+			$(idSpotSelection).removeClass('empty').addClass('taken');
+		}
+		//find out how to add one extra element to that grid
+		$("body").append("<p>Test</p>");
+		//tell it where to put it
+				//what to put there
+		$("body").append("<div class="A10">Test grid</div>");
 	});
 });

@@ -13,30 +13,29 @@ body {
 }
 .left_lot_container{
 	position: relative;
-	width:32%;
+	width:33%;
 	float: left;
-	padding: 5px;
+	padding: 10px;
 	margin-left: 15px;
 	margin-right: 5px;
-	background-color: yellow;
+	background-color: black;
 	display: grid;
 	text-align: center;
 }
 .right_lot_container{
 	position: relative;
-	width:32%;
+	width:33%;
 	float: left;
-	padding: 5px;
+	padding: 10px;
 	margin-right: 5px;
-	background-color: purple;
+	background-color: black;
 	display: grid;
 	text-align: center;
 }
 .sign_up{
 	position: relative;
-	width: 32%;
+	width: 30%;
 	float:left;
-	padding: 5px;
 	margin-right: 5px;	
 	text-align: center;
 	background-color: blue;

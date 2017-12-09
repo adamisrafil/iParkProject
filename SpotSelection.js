@@ -4,7 +4,7 @@
 
 $(function() {
 	var leftLotSpots = 0;
-	$("#leftLot.left_lot_container").css({"grid-template-columns": "1fr 1fr", "grid-template-rows": "1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr"});
+	$("#leftLot.left_lot_container").css({"grid-template-columns": "1fr 1fr", "grid-template-rows": "3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr"});
 		for (var parkingRows = 1; parkingRows < 11; parkingRows++) {
 		console.log(parkingRows);
 		for (var parkingColumns = 1; parkingColumns < 3; parkingColumns++) {
@@ -21,7 +21,7 @@ $(function() {
 		}
 	}
 	var rightLotSpots = 0;
-	$("#rightLot.right_lot_container").css({"grid-template-columns": "1fr 1fr", "grid-template-rows": "1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr"});
+	$("#rightLot.right_lot_container").css({"grid-template-columns": "1fr 1fr", "grid-template-rows": "3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr"});
 		for (var parkingRows = 1; parkingRows < 11; parkingRows++) {
 			console.log(parkingRows);
 		for (var parkingColumns = 1; parkingColumns < 3; parkingColumns++) {

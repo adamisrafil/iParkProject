@@ -1,0 +1,1 @@
+$user_info = “INSERT INTO table_name (signUpFormFirstName, signUpFormLastName, signUpFormSpotSelection) VALUES ('$_POST[signUpFormFirstName]', '$_POST[signUpFormLastName]','$_POST[signUpFormSpotSelection]')”; if (!mysql_query($user_info, $connect)) { die('Error: ' . mysql_error()); } echo “Your information was added to the database.”; mysql_close($connect); ?>

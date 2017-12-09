@@ -17,9 +17,10 @@ body {
 .sign_up{
 	position: relative;
 	width: 30%;
-	float:left;
-	margin-right: 5px;	
+	margin-left: 33%;
+	padding: 5px;
 	text-align: center;
+	justify-content: center;
 	background-color: black;
 	color: white; 
 }

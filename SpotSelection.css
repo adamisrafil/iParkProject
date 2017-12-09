@@ -3,8 +3,10 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
+    font-family:  sans-serif, arial;
 }
 .header{
+	background-image: url("SignUpFormBG.jpg");
 	color: white;
 	background-color: black;
 	padding-top: 5px;
@@ -13,6 +15,8 @@ body {
 	font-family: sans-serif, arial;
 	border: 20px;
 	border-color: white;
+	border-radius: 25px;
+	border: solid black 1px;
 }
 .left_lot_container{
 	position: relative;
@@ -24,6 +28,7 @@ body {
 	background-color: black;
 	display: grid;
 	text-align: center;
+	border-radius: 25px;
 }
 .right_lot_container{
 	position: relative;
@@ -34,15 +39,19 @@ body {
 	background-color: black;
 	display: grid;
 	text-align: center;
+	border-radius: 25px;
 }
 .sign_up{
+	background-image: url("SignUpFormBG.jpg");
+	border-radius: 25px;
 	position: relative;
 	width: 30%;
 	float:left;
 	margin-right: 5px;	
 	text-align: center;
 	background-color: black;
-	color: white; 
+	color: white;
+	border: solid black 1px; 
 }
 .taken{
 	background-color: red;

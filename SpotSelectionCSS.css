@@ -20,8 +20,8 @@ body {
 	margin-right: 5px;
 	background-color: yellow;
 	display: grid;
-	grid-template-columns: : 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	/*grid-template-columns: : 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
 	text-align: center;
 }
 .sign_up{
@@ -39,8 +39,11 @@ body {
 .empty{
 	background-color: green;
 }
+.spot{
+	border: solid black 1px;
+}
 /* Parking Lot 1, Column A*/
-.A1{
+/*.A1{
 	border: 1px solid black;
 	grid-row: 1/10;
 	grid-column: 1/2;
@@ -89,9 +92,9 @@ body {
 	border: solid 1px black;
 	grid-row: 10/10;
 	grid-column: 1/2;
-}
+}*/
 /* Parking Lot 1, Column B*/
-.B1{
+/*.B1{
 	border: 1px solid black;
 	grid-row: 1/10;
 	grid-column: 2/2;
@@ -140,4 +143,4 @@ body {
 	border: 1px solid black;
 	grid-row: 10/10;
 	grid-column: 2/2;
-}
+}*/

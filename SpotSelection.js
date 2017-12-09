@@ -3,17 +3,31 @@
 // 	grid-row: 1/10;
 // 	grid-column: 1/2;
 // }
-$(function() {
-	for (var i = 1; i < 11; i++) {
-		var lotSpace = ('<div id="A' + i + '" class="A' + i + ' empty">A' + i + '</div>').html();
-		$("#leftLot").html(lotSpace);
-	}
+//NOTE FOR TOMORROW:
+//grid-columns not being added as a css property
+//Auto add grid based on needed values?
 
+$(function() {
+	//("#leftlot").css("display","grid");
+	for (var parkingRows = 1; parkingRows < 11; parkingRows++) {
+		console.log(parkingRows);
+		for (var parkingColumns = 0; parkingColumns < 2; parkingColumns++) {
+			console.log(parkingColumns);
+		// https://stackoverflow.com/questions/10619445/the-preferred-way-of-creating-a-new-element-with-jquery
+		// var lotSpace = ('<div id="A' + i + '" class="A' + i + ' empty">A' + i + '</div>').html();
+			var lotSpace = $('<div id="A' + parkingRows + '">A' + parkingRows + '</div>');
+			lotSpace.css({"grid-row": parkingRows+"/10", "grid-column": parkingColumns+"/2"});
+			lotSpace.addClass('spot empty');
+			$("#leftLot").append(lotSpace);
+			console.log(lotSpace);
+		}
+	}
+	//https://stackoverflow.com/queastions
 	$('#signUpForm').on('submit', function(e) {
 		e.preventDefault();
 		var dataFromSignUpForm = $("#signUpForm :input").serializeArray();
 		console.log(dataFromSignUpForm);
-		console.log("print test")
+		console.log("print test");
 
 		var firstName = $('#signUpFormFirstName').val();
 		var lastName = $('#signUpFormLastName').val();
@@ -40,7 +54,6 @@ $(function() {
 			$(idSpotSelection).removeClass('empty').addClass('taken');
 		}
 		//find out how to add one extra element to that grid
-		$("body").append("<p>Test</p>");
 		//tell it where to put it
 				//what to put there
 		//$("body").append('<div class="A10">Test grid</div>');

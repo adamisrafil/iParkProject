@@ -1,47 +1,43 @@
-// .A1{
-// 	border: 1px solid black;
-// 	grid-row: 1/10;
-// 	grid-column: 1/2;
-// }
 //NOTE FOR TOMORROW:
 //grid-columns not being added as a css property
 //Auto add grid based on needed values?
 
 $(function() {
+	var leftLotSpots = 0;
 	$("#leftLot.left_lot_container").css({"grid-template-columns": "1fr 1fr", "grid-template-rows": "1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr"});
 		for (var parkingRows = 1; parkingRows < 11; parkingRows++) {
 		console.log(parkingRows);
 		for (var parkingColumns = 1; parkingColumns < 3; parkingColumns++) {
 			console.log(parkingColumns);
-		// https://stackoverflow.com/questions/10619445/the-preferred-way-of-creating-a-new-element-with-jquery
-		// var lotSpace = ('<div id="A' + i + '" class="A' + i + ' empty">A' + i + '</div>').html();
-			var lotSpace = $('<div id="A' + parkingRows + '">A' + parkingRows + '</div>');
+			leftLotSpots++;
+			console.log(leftLotSpots);
+			// https://stackoverflow.com/questions/10619445/the-preferred-way-of-creating-a-new-element-with-jquery
+			var lotSpace = $('<div id="A' + leftLotSpots + '">A' + leftLotSpots + '</div>');
 			lotSpace.addClass('spot empty');
 			//lotSpace.css({"grid-row": "auto", "grid-column": "auto"});
 			$("#leftLot").append(lotSpace);
+			$("#signUpFormSpotSelection").append('<option id="spotOptionA' + leftLotSpots + '"  value="A' + leftLotSpots + '">A' + leftLotSpots + '</div>');
 			console.log(lotSpace);
 		}
 	}
+	var rightLotSpots = 0;
 	$("#rightLot.right_lot_container").css({"grid-template-columns": "1fr 1fr", "grid-template-rows": "1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr"});
 		for (var parkingRows = 1; parkingRows < 11; parkingRows++) {
-		console.log(parkingRows);
+			console.log(parkingRows);
 		for (var parkingColumns = 1; parkingColumns < 3; parkingColumns++) {
 			console.log(parkingColumns);
-		// https://stackoverflow.com/questions/10619445/the-preferred-way-of-creating-a-new-element-with-jquery
-		// var lotSpace = ('<div id="A' + i + '" class="A' + i + ' empty">A' + i + '</div>').html();
-			var lotSpace = $('<div id="A' + parkingRows + '">A' + parkingRows + '</div>');
+			rightLotSpots++;
+			var lotSpace = $('<div id="B' + rightLotSpots + '">B' + rightLotSpots + '</div>');
 			lotSpace.addClass('spot empty');
-			//lotSpace.css({"grid-row": "auto", "grid-column": "auto"});
 			$("#rightLot").append(lotSpace);
+			$("#signUpFormSpotSelection").append('<option id="spotOptionB' + rightLotSpots + '"  value="B' + rightLotSpots + '">B' + rightLotSpots + '</div>');
 			console.log(lotSpace);
 		}
 	}
-	//https://stackoverflow.com/queastions
 	$('#signUpForm').on('submit', function(e) {
 		e.preventDefault();
 		var dataFromSignUpForm = $("#signUpForm :input").serializeArray();
 		console.log(dataFromSignUpForm);
-		console.log("print test");
 
 		var firstName = $('#signUpFormFirstName').val();
 		var lastName = $('#signUpFormLastName').val();
@@ -50,12 +46,6 @@ $(function() {
 		console.log(firstName + " " + lastName + " " + spotSelection);
 
 		//find the gird element corresponding to spotSelection
-		var spot = $('#A1');
-		var spot2 = $('#B7');
-		var spot3 = $('#C7');
-		console.log(spot);
-		console.log(spot2);
-		console.log(spot3);
 		var idSpotSelection = '#' + spotSelection;
 		console.log(idSpotSelection);
 		var spot4 = $(idSpotSelection);
@@ -67,9 +57,5 @@ $(function() {
 		else {
 			$(idSpotSelection).removeClass('empty').addClass('taken');
 		}
-		//find out how to add one extra element to that grid
-		//tell it where to put it
-				//what to put there
-		//$("body").append('<div class="A10">Test grid</div>');
 	});
 });

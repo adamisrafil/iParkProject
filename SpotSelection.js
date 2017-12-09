@@ -3,36 +3,42 @@
 //Auto add grid based on needed values?
 
 $(function() {
+	var neededParkingRows = 11;
+	var neededParkingColumns = 3;
+
+	//creating left side of page parking lot
 	var leftLotSpots = 0;
 	$("#leftLot.left_lot_container").css({"grid-template-columns": "1fr 1fr", "grid-template-rows": "3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr"});
-		for (var parkingRows = 1; parkingRows < 11; parkingRows++) {
-		console.log(parkingRows);
-		for (var parkingColumns = 1; parkingColumns < 3; parkingColumns++) {
-			console.log(parkingColumns);
-			leftLotSpots++;
-			console.log(leftLotSpots);
-			// https://stackoverflow.com/questions/10619445/the-preferred-way-of-creating-a-new-element-with-jquery
-			var lotSpace = $('<div id="A' + leftLotSpots + '">A' + leftLotSpots + '</div>');
-			lotSpace.addClass('spot empty');
-			//lotSpace.css({"grid-row": "auto", "grid-column": "auto"});
-			$("#leftLot").append(lotSpace);
-			$("#signUpFormSpotSelection").append('<option id="spotOptionA' + leftLotSpots + '"  value="A' + leftLotSpots + '">A' + leftLotSpots + '</div>');
-			console.log(lotSpace);
-		}
+		for (var parkingRows = 1; parkingRows < neededParkingRows; parkingRows++) {
+			console.log(parkingRows);
+			for (var parkingColumns = 1; parkingColumns < neededParkingColumns; parkingColumns++) {
+				console.log(parkingColumns);
+				leftLotSpots++;
+				console.log(leftLotSpots);
+				// https://stackoverflow.com/questions/10619445/the-preferred-way-of-creating-a-new-element-with-jquery
+				var lotSpace = $('<div id="A' + leftLotSpots + '">A' + leftLotSpots + '</div>');
+				lotSpace.addClass('spot empty');
+				//lotSpace.css({"grid-row": "auto", "grid-column": "auto"});
+				$("#leftLot").append(lotSpace);
+				$("#signUpFormSpotSelection").append('<option id="spotOptionA' + leftLotSpots + '"  value="A' + leftLotSpots + '">A' + leftLotSpots + '</div>');
+				console.log(lotSpace);
+			}
 	}
+	
+	//creating right side of page parking lot
 	var rightLotSpots = 0;
 	$("#rightLot.right_lot_container").css({"grid-template-columns": "1fr 1fr", "grid-template-rows": "3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr"});
-		for (var parkingRows = 1; parkingRows < 11; parkingRows++) {
+		for (var parkingRows = 1; parkingRows < neededParkingRows; parkingRows++) {
 			console.log(parkingRows);
-		for (var parkingColumns = 1; parkingColumns < 3; parkingColumns++) {
-			console.log(parkingColumns);
-			rightLotSpots++;
-			var lotSpace = $('<div id="B' + rightLotSpots + '">B' + rightLotSpots + '</div>');
-			lotSpace.addClass('spot empty');
-			$("#rightLot").append(lotSpace);
-			$("#signUpFormSpotSelection").append('<option id="spotOptionB' + rightLotSpots + '"  value="B' + rightLotSpots + '">B' + rightLotSpots + '</div>');
-			console.log(lotSpace);
-		}
+			for (var parkingColumns = 1; parkingColumns < neededParkingColumns; parkingColumns++) {
+				console.log(parkingColumns);
+				rightLotSpots++;
+				var lotSpace = $('<div id="B' + rightLotSpots + '">B' + rightLotSpots + '</div>');
+				lotSpace.addClass('spot empty');
+				$("#rightLot").append(lotSpace);
+				$("#signUpFormSpotSelection").append('<option id="spotOptionB' + rightLotSpots + '"  value="B' + rightLotSpots + '">B' + rightLotSpots + '</div>');
+				console.log(lotSpace);
+			}
 	}
 	$('#signUpForm').on('submit', function(e) {
 		e.preventDefault();

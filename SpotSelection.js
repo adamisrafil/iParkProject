@@ -8,17 +8,31 @@
 //Auto add grid based on needed values?
 
 $(function() {
-	//("#leftlot").css("display","grid");
-	for (var parkingRows = 1; parkingRows < 11; parkingRows++) {
+	$("#leftLot.left_lot_container").css({"grid-template-columns": "1fr 1fr", "grid-template-rows": "1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr"});
+		for (var parkingRows = 1; parkingRows < 11; parkingRows++) {
 		console.log(parkingRows);
-		for (var parkingColumns = 0; parkingColumns < 2; parkingColumns++) {
+		for (var parkingColumns = 1; parkingColumns < 3; parkingColumns++) {
 			console.log(parkingColumns);
 		// https://stackoverflow.com/questions/10619445/the-preferred-way-of-creating-a-new-element-with-jquery
 		// var lotSpace = ('<div id="A' + i + '" class="A' + i + ' empty">A' + i + '</div>').html();
 			var lotSpace = $('<div id="A' + parkingRows + '">A' + parkingRows + '</div>');
-			lotSpace.css({"grid-row": parkingRows+"/10", "grid-column": parkingColumns+"/2"});
 			lotSpace.addClass('spot empty');
+			//lotSpace.css({"grid-row": "auto", "grid-column": "auto"});
 			$("#leftLot").append(lotSpace);
+			console.log(lotSpace);
+		}
+	}
+	$("#rightLot.right_lot_container").css({"grid-template-columns": "1fr 1fr", "grid-template-rows": "1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr"});
+		for (var parkingRows = 1; parkingRows < 11; parkingRows++) {
+		console.log(parkingRows);
+		for (var parkingColumns = 1; parkingColumns < 3; parkingColumns++) {
+			console.log(parkingColumns);
+		// https://stackoverflow.com/questions/10619445/the-preferred-way-of-creating-a-new-element-with-jquery
+		// var lotSpace = ('<div id="A' + i + '" class="A' + i + ' empty">A' + i + '</div>').html();
+			var lotSpace = $('<div id="A' + parkingRows + '">A' + parkingRows + '</div>');
+			lotSpace.addClass('spot empty');
+			//lotSpace.css({"grid-row": "auto", "grid-column": "auto"});
+			$("#rightLot").append(lotSpace);
 			console.log(lotSpace);
 		}
 	}

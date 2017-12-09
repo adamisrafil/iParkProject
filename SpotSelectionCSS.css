@@ -15,10 +15,22 @@ body {
 	position: relative;
 	width:32%;
 	float: left;
-	padding: 9px;
+	padding: 5px;
 	margin-left: 15px;
 	margin-right: 5px;
 	background-color: yellow;
+	display: grid;
+	/*grid-template-columns: : 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
+	text-align: center;
+}
+.right_lot_container{
+	position: relative;
+	width:32%;
+	float: left;
+	padding: 5px;
+	margin-right: 5px;
+	background-color: purple;
 	display: grid;
 	/*grid-template-columns: : 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/

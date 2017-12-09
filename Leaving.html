@@ -1,0 +1,35 @@
+<DOCTYPE! html>
+<html>
+	<head>
+		<title>iPark</title>
+		<link rel="stylesheet" href="Leaving.css">
+	</head>
+	<body>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="SpotSelection.js"></script>
+		<div class="header">
+			<h1>iPark.com</h1>
+			<h4>1855 Broadway New York, NY 10023</h4>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div id="pageContent">
+			<div class="sign_up">
+				<h3>Sign up here for the parking lot</h3>
+				<form id="leavingForm" method="post" action="info.php">
+					<p><label>First Name:
+						<input id="leavingFormFirstName" type="text" name="First Name">
+					</label></p>
+					<select id="leavingFormSpotSelection"></select>
+					<br>
+					<br>
+					<button type="Submit"> Submit</button>
+				</form>
+			</div>
+		</div>
+		<p><center><i> Copyright © ITEC-305 Group 2 Fall 2017</i></center></p>
+	</body>
+</html>

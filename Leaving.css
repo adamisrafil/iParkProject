@@ -1,0 +1,25 @@
+body {
+    background-image: url("car-parks.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+.header{
+	color: white;
+	background-color: black;
+	padding-top: 5px;
+	font-size: 20px;
+	text-align: center;
+	font-family: sans-serif, arial;
+	border: 20px;
+	border-color: white;
+}
+.sign_up{
+	position: relative;
+	width: 30%;
+	float:left;
+	margin-right: 5px;	
+	text-align: center;
+	background-color: black;
+	color: white; 
+}

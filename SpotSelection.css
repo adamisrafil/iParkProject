@@ -7,9 +7,12 @@ body {
 .header{
 	color: white;
 	background-color: black;
-	padding: 10px;
+	padding-top: 5px;
+	font-size: 20px;
 	text-align: center;
 	font-family: sans-serif, arial;
+	border: 20px;
+	border-color: white;
 }
 .left_lot_container{
 	position: relative;

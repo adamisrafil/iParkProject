@@ -3,12 +3,12 @@
 //Auto add grid based on needed values?
 
 $(function() {
-	var neededParkingRows = 11;
+	var neededParkingRows = 21;
 	var neededParkingColumns = 3;
 
 	//creating left side of page parking lot
 	var leftLotSpots = 0;
-	$("#leftLot.left_lot_container").css({"grid-template-columns": "repeat(2, 1fr)", "grid-template-rows": "repeat(10, 3fr)"});
+	$("#leftLot.left_lot_container").css({"grid-template-columns": "repeat("+(neededParkingColumns-1)+", 1fr)", "grid-template-rows": "repeat("+(neededParkingRows-1)+", 3fr)"});
 		for (var parkingRows = 1; parkingRows < neededParkingRows; parkingRows++) {
 			console.log(parkingRows);
 			for (var parkingColumns = 1; parkingColumns < neededParkingColumns; parkingColumns++) {
@@ -26,7 +26,7 @@ $(function() {
 
 	//creating right side of page parking lot
 	var rightLotSpots = 0;
-	$("#rightLot.right_lot_container").css({"grid-template-columns": "repeat(2, 1fr)", "grid-template-rows": "repeat(10, 3fr)"});
+	$("#rightLot.right_lot_container").css({"grid-template-columns": "repeat("+(neededParkingColumns-1)+", 1fr)", "grid-template-rows": "repeat("+(neededParkingRows-1)+", 3fr)"});
 		for (var parkingRows = 1; parkingRows < neededParkingRows; parkingRows++) {
 			console.log(parkingRows);
 			for (var parkingColumns = 1; parkingColumns < neededParkingColumns; parkingColumns++) {

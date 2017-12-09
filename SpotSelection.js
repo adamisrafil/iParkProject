@@ -41,6 +41,7 @@ $(function() {
 		$("body").append("<p>Test</p>");
 		//tell it where to put it
 				//what to put there
-		$("body").append("<div class="A10">Test grid</div>");
+		$("#leftLot").append('<div class="A10">Test grid</div>');
+		//$("body").append('<div class="A10">Test grid</div>');
 	});
 });

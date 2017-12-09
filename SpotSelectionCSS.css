@@ -6,8 +6,8 @@ body {
 }
 .header{
 	color: white;
-	background-color: blue;
-	padding: 15px;
+	background-color: black;
+	padding: 10px;
 	text-align: center;
 	font-family: sans-serif, arial;
 }
@@ -38,7 +38,8 @@ body {
 	float:left;
 	margin-right: 5px;	
 	text-align: center;
-	background-color: blue;
+	background-color: black;
+	color: white; 
 }
 .taken{
 	background-color: red;

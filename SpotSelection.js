@@ -1,12 +1,14 @@
-/*
-form.onsubmit = function(){
-	//change class tag from empty to taken
-
-	//create random number for use to identify
-
-}
-*/
+// .A1{
+// 	border: 1px solid black;
+// 	grid-row: 1/10;
+// 	grid-column: 1/2;
+// }
 $(function() {
+	for (var i = 1; i < 11; i++) {
+		var lotSpace = ('<div id="A' + i + '" class="A' + i + ' empty">A' + i + '</div>').html();
+		$("#leftLot").html(lotSpace);
+	}
+
 	$('#signUpForm').on('submit', function(e) {
 		e.preventDefault();
 		var dataFromSignUpForm = $("#signUpForm :input").serializeArray();
@@ -17,7 +19,7 @@ $(function() {
 		var lastName = $('#signUpFormLastName').val();
 		var spotSelection = $('#signUpFormSpotSelection').val();
 
-		console.log(firstName + lastName + spotSelection);
+		console.log(firstName + " " + lastName + " " + spotSelection);
 
 		//find the gird element corresponding to spotSelection
 		var spot = $('#A1');
@@ -41,7 +43,6 @@ $(function() {
 		$("body").append("<p>Test</p>");
 		//tell it where to put it
 				//what to put there
-		$("#leftLot").append('<div class="A10">Test grid</div>');
 		//$("body").append('<div class="A10">Test grid</div>');
 	});
 });

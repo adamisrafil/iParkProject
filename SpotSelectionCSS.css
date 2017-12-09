@@ -1,7 +1,13 @@
+body {
+    background-image: url("car-parks.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
 .header{
 	color: white;
 	background-color: blue;
-	padding: 10px;
+	padding: 15px;
 	text-align: center;
 	font-family: sans-serif, arial;
 }
@@ -12,7 +18,7 @@
 	padding: 5px;
 	margin-left: 15px;
 	margin-right: 5px;
-	background-color: red;
+	background-color: yellow;
 	display: grid;
 	grid-template-columns: : 1fr 1fr;
 	grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
@@ -39,16 +45,19 @@
 	grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
 	text-align: center;
 }
-
+.taken{
+	background-color: red;
+}
+.empty{
+	background-color: green;
+}
 /* Parking Lot 1, Column A*/
 .A1{
-	background-color: green;
 	border: 1px solid black;
 	grid-row: 1/10;
 	grid-column: 1/2;
 }
 .A2{
-	background-color: green;
 	border: solid 1px black;
 	grid-row: 2/10;
 	grid-column: 1/2;

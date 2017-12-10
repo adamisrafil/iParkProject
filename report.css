@@ -1,0 +1,114 @@
+body {
+    background-image: url("car-parks.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.head{
+
+    position: relative;
+    background: black;
+    opacity: 0.75;
+    width: 30%;
+    height: 70px;
+    font-size: 60px;
+    top:20px;
+    color: white;
+    text-align: center;
+    margin-left: 35%;
+    font-family: sans-serif; 
+    border-radius: 15px;
+}
+
+.para{
+	position: relative;
+	text-align: center;
+	background-color: white;
+	width: 72%;
+	font-size: 30px;
+	text-decoration: bold;
+	margin-left: 14%;
+	border-color: black;
+	opacity: 0.8;
+	border-radius: 10px;
+
+}
+
+.sign_up{
+	position: relative;
+	width: 50%;
+	float:right;
+	margin-right: 25%;	
+	text-align: center;
+	background-image: url("hazard.png");
+	color: white; 
+	border: 50px;
+	font-size: 25px;
+    border-color: white;
+    border-radius: 35px 35px;
+    margin-bottom: 2%;
+    opacity: 0.85;
+}
+
+.footer{
+    text-align: center;
+    position: relative;
+    margin-top: 
+}
+
+@media screen and (max-width: 600px) {
+
+	body {
+    background-image: url("Carpark.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+	}
+
+	.head{
+    position: relative;
+    background: white;
+    opacity: 0.75;
+    width: 40%;
+    height: 50px;
+    font-size: 40px;
+    top:20px;
+    color: black;
+    text-align: center;
+    margin-left: 35%;
+    font-family: sans-serif; 
+    border-radius: 15px;
+	}
+
+	.para{
+	position: relative;
+	text-align: center;
+	background-color: black;
+	color: white;
+	width: 72%;
+	font-size: 20px;
+	text-decoration: bold;
+	margin-left: 14%;
+	border-color: black;
+	opacity: 0.8;
+	border-radius: 10px;
+	}
+
+	.sign_up{
+	position: relative;
+	width: 50%;
+	float:right;
+	margin-right: 25%;	
+	text-align: center;
+	background-image: url("hazard.png");
+	color: white; 
+	border: 50px;
+	font-size: 15px;
+    border-color: white;
+    border-radius: 35px 35px;
+    margin-bottom: 2%;
+    opacity: 0.8;
+ 	}
+	
+}

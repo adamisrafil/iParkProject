@@ -1,22 +1,31 @@
-<DOCTYPE! html>
 <html>
-<head>
-</head>
-<body>
-<form action="/action_page.php">
-  Username:<br>
-  <input type="text" name="firstname" value="Username">
-  <br>
-  <br>
-  Password: <br>
-  <input type="text" name="firstname" value="Password">
-  <br>
-  <br>
-  What seems to be the problem?<br>
-  <input type="text" name="lastname" value="">
-  <br><br>
-  <input type="submit" value="Submit">
-</form>
+    <head>
+        <link rel="stylesheet" href="report.css">
 
-</body>
+    </head>
+    <body class "body" >
+        <p class = "head"> REPORT </p>
+
+        <p class = "para">If You Find Your Parking Spot Already Taken, Please Let Us Know <br> Our 24 Hour Service assistant will Assign you a New Spot Number in Minutes</p>
+        <div class = "wrap">
+            <div class="sign_up">
+               <h1>Is Your Spot Already Filled? Let us Know </h1>
+               <form id="signUpForm" method="post" action="info.php">
+                   <p><label>Spot Number:
+                      <input id="ReportFromSpot" type="text" name="Spot Number">
+                  </label></p>
+                 <p> <label>First Name: 
+                      <input id="ReportFromName" type="text" name="First Name">
+                  </label></p>
+                  <br>
+                  <button type="Submit"> Submit</button>
+              </form>
+          </div>
+          </div>
+        <div class = "footer">
+        <hr color = "#708090" width = "80%" Align = "center">
+        <footer ><i> Copyright © ITEC 305 Fall 2017</i></footer>
+        </div>
+
+    </body>
 </html>

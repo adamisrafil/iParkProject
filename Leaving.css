@@ -4,23 +4,112 @@ body {
     background-attachment: fixed;
     background-size: 100%;
 }
-.header{
-	color: white;
-	background-color: black;
-	padding-top: 5px;
-	font-size: 20px;
-	text-align: center;
-	font-family: sans-serif, arial;
-	border: 20px;
-	border-color: white;
+
+.Heading_1{
+    position: relative;
+    background: black;
+    opacity: 0.75;
+    width: 30%;
+    height: 80px;
+    font-size: 60px;
+    top:20px;
+    color: white;
+    text-align: center;
+    margin-left: 35%;
+    font-family: sans-serif; 
+    border-radius: 15px;
 }
+
+.Heading_2{
+    position: relative;
+    top:-30px;
+    background:black;
+    width: 60%;
+    height: 40px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    margin-left: 20%;
+    opacity: 0.65;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;          
+}
+
 .sign_up{
 	position: relative;
-	width: 30%;
-	margin-left: 33%;
+	width: 40%;
 	padding: 5px;
+	font-size: 25px;
 	text-align: center;
-	justify-content: center;
+	margin-left: 30%;
+	margin-bottom: 3%;
 	background-color: black;
-	color: white; 
+	color: white;
+	opacity: 0.85 
+}
+
+.footer{
+    text-align: center;
+    position: relative;
+    margin-top: 
+}
+
+@media screen and (max-width: 600px) {
+
+    .body {
+    background-image: url("Carpark.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+
+}
+
+  .heading_1 {
+    position: relative;
+    background: white;
+    opacity: 0.8;
+    width: 30%;
+    height: 60px;
+    font-size: 40px;
+    top:20px;
+    color: black;
+    text-align: center;
+    margin-left: 35%;
+    font-family: sans-serif; 
+    border-radius: 15px;
+  }
+
+  .Heading_2{
+    position: relative;
+    top: 5px;
+    background:white;
+    width: 50%;
+    height: 60px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    border-radius: 15px;
+    margin-left: 25%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;          
+	}
+
+	.sign_up{
+	position: relative;
+	width: 40%;
+	padding: 5px;
+	font-size: 20px;
+	text-align: center;
+	margin-left: 30%;
+	margin-bottom: 3%;
+	background-image: url("form.png");
+	color: white;
+	opacity: 0.8 
+}
+
+.footer{
+    text-align: center;
+    position: relative;
+    margin-top: 
+}
+
 }

@@ -1,39 +1,48 @@
 <DOCTYPE! html>
-<html>
-	<head>
-		<title>iPark</title>
-		<link rel="stylesheet" href="SpotSelection.css">
-	</head>
-	<body>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script type="text/javascript" src="SpotSelection.js"></script>
-		<div class="header">
-			<h1>iPark.com</h1>
-			<h4>1855 Broadway New York, NY 10023</h4>
-		</div>
-		<br>
-		<br>
-		<br>
-		<div id="pageContent">
-			<h2><pre style="font-family: sans-serif, arial">					Parking Level A 																				Parking Level B</pre></h2>
-			<div id="leftLot" class="left_lot_container"></div>
-			<div class="sign_up">
-				<h3>Sign up here for the parking lot</h3>
-				<form id="signUpForm" method="post" action="info.php">
-					<p><label>First Name:
-						<input id="signUpFormFirstName" type="text" name="First Name">
-					</label></p>
-					<p> <label>Last Name: 
-						<input id="signUpFormLastName" type="text" name="Last Name">
-					</label></p>
-					<select id="signUpFormSpotSelection"></select>
-					<br>
-					<br>
-					<button type="Submit"> Submit</button>
-				</form>
-			</div>
-			<div id="rightLot" class="right_lot_container"></div>
-		</div>
-		<p><center><i> Copyright © ITEC-305 Group 2 Fall 2017</i></center></p>
-	</body>
-</html>
+  <html>
+
+  <head>
+    <title>iPark</title>
+    <link rel="stylesheet" href="SpotSelection.css">
+  </head>
+
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="SpotSelection.js"></script>
+    <div class="header">
+      <h1>iPark.com</h1>
+      <h4>1855 Broadway New York, NY 10023</h4>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="pageContent">
+      <h2><pre style="font-family: sans-serif, arial">					Parking Level A 																				Parking Level B</pre></h2>
+      <div id="leftLot" class="left_lot_container"></div>
+      <div class="sign_up">
+        <h3>Sign up here for the parking lot</h3>
+        <form id="signUpForm" method="post" action="info.php">
+          <p>
+            <label>First Name:
+              <input id="signUpFormFirstName" type="text" name="First Name">
+            </label>
+          </p>
+          <p>
+            <label>Last Name:
+              <input id="signUpFormLastName" type="text" name="Last Name">
+            </label>
+          </p>
+          <select id="signUpFormSpotSelection"></select>
+          <br>
+          <br>
+          <button type="Submit"> Submit</button>
+        </form>
+      </div>
+      <div id="rightLot" class="right_lot_container"></div>
+    </div>
+    <p>
+      <center><i> Copyright © ITEC-305 Group 2 Fall 2017</i></center>
+    </p>
+  </body>
+
+  </html>

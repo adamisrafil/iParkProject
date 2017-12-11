@@ -10,11 +10,9 @@ $(function() {
   });
 
   for (var parkingRows = 1; parkingRows < neededParkingRows; parkingRows++) {
-
     console.log(parkingRows);
 
     for (var parkingColumns = 1; parkingColumns < neededParkingColumns; parkingColumns++) {
-
       console.log(parkingColumns);
       leftLotSpots++;
       console.log(leftLotSpots);
@@ -35,11 +33,9 @@ $(function() {
   });
 
   for (var parkingRows = 1; parkingRows < neededParkingRows; parkingRows++) {
-
     console.log(parkingRows);
 
     for (var parkingColumns = 1; parkingColumns < neededParkingColumns; parkingColumns++) {
-
       console.log(parkingColumns);
       rightLotSpots++;
       var lotSpace = $('<div id="B' + rightLotSpots + '">B' + rightLotSpots + '</div>');
@@ -51,8 +47,7 @@ $(function() {
   }
   //using the form data on submission to send data to db and change class tag
   $('#signUpForm').on('submit', function(e) {
-
-    //e.preventDefault();
+    e.preventDefault();
     var dataFromSignUpForm = $("#signUpForm :input").serializeArray();
     console.log(dataFromSignUpForm);
 
@@ -75,7 +70,7 @@ $(function() {
     } else {
 
       $(idSpotSelection).removeClass('empty').addClass('taken');
-      
+      $.post( "SpotSelection.php", $( "#signUpForm" ).serialize() );
     }
   });
 });

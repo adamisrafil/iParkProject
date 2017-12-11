@@ -9,6 +9,8 @@
 	$signUpFormLastName = $_POST['signUpFormLastName'];
 	$signUpFormSpotSelection = $_POST['signUpFormSpotSelection'];
 
+	//todo sanitize the input
+
 	$connection = new mysqli($servername, $dbusername, $dbpassword, $dbname);
 
 	if ($connection->connect_error){

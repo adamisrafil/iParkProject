@@ -41,8 +41,9 @@ $(function() {
       console.log(lotSpace);
     }
   }
+  //using the form data on submission to send data to db and change class tag
   $('#signUpForm').on('submit', function(e) {
-    e.preventDefault();
+    //e.preventDefault();
     var dataFromSignUpForm = $("#signUpForm :input").serializeArray();
     console.log(dataFromSignUpForm);
 
@@ -62,6 +63,7 @@ $(function() {
       alert("That spot is taken");
     } else {
       $(idSpotSelection).removeClass('empty').addClass('taken');
+      //$.post( "info.php", $( "#signUpForm" ).serialize() );
     }
   });
 });

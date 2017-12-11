@@ -1,5 +1,6 @@
 <?php
 // phpinfo();
+// https://www.youtube.com/watch?v=mlp7ASstKQs
 	$servername = "localhost";
 	$dbusername = "root";
 	$dbpassword = "";
@@ -9,7 +10,8 @@
 	$signUpFormLastName = $_POST['signUpFormLastName'];
 	$signUpFormSpotSelection = $_POST['signUpFormSpotSelection'];
 
-	//todo sanitize the input
+	// Todo sanitize the input
+	// Get request
 
 	$connection = new mysqli($servername, $dbusername, $dbpassword, $dbname);
 
